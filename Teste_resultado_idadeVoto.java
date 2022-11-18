@@ -24,9 +24,11 @@ public class Teste_resultado_idadeVoto {
             System.out.println("Testes executados com sucesso!");
         }else{
             System.out.println("Algum(ns) teste(s) executado(s) com falha(s).");
-            for (int i = 0; i < testesFalhos.size(); i++) {
-                System.out.println(testesFalhos.get(i));
+            for (String testeFalho: testesFalhos) {
+                System.out.println(testeFalho);
             }
+
+
         }
 
     }
