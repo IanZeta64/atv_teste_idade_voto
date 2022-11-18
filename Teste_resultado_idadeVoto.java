@@ -24,10 +24,11 @@ public class Teste_resultado_idadeVoto {
             System.out.println("Testes executados com sucesso!");
         }else{
             System.out.println("Algum(ns) teste(s) executado(s) com falha(s).");
+            for (int i = 0; i < testesFalhos.size(); i++) {
+                System.out.println(testesFalhos.get(i));
+            }
         }
-        for (int i = 0; i < testesFalhos.size(); i++) {
-            System.out.println(testesFalhos.get(i));
-        }
+
     }
     private static List<String> getResultadosEsperados() {
         List <String> resultadosEsperdos = List.of("Voto obrigatório.", "Voto obrigatório.", "Voto obrigatório.",
