@@ -20,7 +20,7 @@ public class Teste_resultado_idadeVoto {
             }
             System.out.printf("Teste %d : %s.%n", i+1, testes.get(i));
         }
-        if (contadorSucesso == 9){
+        if (contadorSucesso == idades.size()){
             System.out.println("Testes executados com sucesso!");
         }else{
             System.out.println("Algum(ns) teste(s) executado(s) com falha(s).");
